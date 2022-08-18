@@ -1,0 +1,78 @@
+Tursunboyev_Ozodbek_Yusufali_o'g'li, [Пт 29.07.22 17:18]
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    width: 100%;
+    background: rgb(245, 110, 133);
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 70px 1fr 70px;
+    justify-content: center;
+    grid-template-areas:
+
+        "header header header"
+        "aside article article"
+        "footer footer footer"
+    ;
+
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+}
+
+.grit-item-2 {
+    background-color: rgb(92, 135, 188);
+    grid-area: aside;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.grit-item-1 {
+    background-color: rgb(0, 172, 245);
+    grid-area: header;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.grit-item-3 {
+    background-color: rgb(161, 35, 35);
+    grid-area: article;
+    margin-top: 10px;
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+.grit-item-3>p{
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: 200px;
+}
+.grit-item-3>img{
+    position: relative;
+    top: 250px;
+    left: -450px;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+}
+
+.grit-item-4 {
+    background-color: rgb(0, 172, 245);
+    grid-area: footer;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
